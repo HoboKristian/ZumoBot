@@ -7,6 +7,7 @@ class MotobWheels(object):
     
     def update(self, value):
         self.value = value
+        self.operationalize()
 
     def operationalize(self):
         if self.value != None:
@@ -23,9 +24,9 @@ class MotobWheels(object):
                 elif degrees == 180:
                     self.motors.set_value([0.6, -0.6], dur=1)
             elif direction == 'F':
-                self.motors.set_value([1, 1])
+                self.motors.set_value([0.1, 0.1])
             elif direction == 'B':
-                self.motors.set_value([-1, -1])
+                self.motors.set_value([-0.1, -0.1])
         else:
             self.motors.set_value([0, 0])
 
