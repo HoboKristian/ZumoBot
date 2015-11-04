@@ -1,4 +1,4 @@
-from basic_robot import motors
+import motors
 
 class MotobWheels(object):
     def __init__(self):

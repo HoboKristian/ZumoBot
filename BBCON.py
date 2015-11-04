@@ -34,7 +34,7 @@ class BBCON(object):
 
     def add_behavior(self, behavior):
         self.behaviors.append( behavior )
-        self.inactive_behaviors.append( behavior )
+        self.active_behaviors.append( behavior )
 
     def add_sensob(self, sensob):
         self.sensobs.append( sensob )

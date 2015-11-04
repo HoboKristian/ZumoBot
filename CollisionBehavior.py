@@ -1,8 +1,6 @@
-import sensob_reflectance
-
 class CollisionBehavior(object):
-    def __init__(self, threshold=0.2):
-        self.sensob = sensob_reflectance.SensobReflectance()
+    def __init__(self, sensob, threshold=0.2):
+        self.sensob = sensob
         self.value = 0
         self.threshold = threshold
         self.wheel_value = []

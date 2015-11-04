@@ -1,8 +1,6 @@
-import sensob_ultrasonic
-
 class CameraBehavior(object):
-	def __init__(self):
-		self.ultrasonic = sensob_ultrasonic.SensobUltrasonic()
+	def __init__(self, sensob):
+		self.ultrasonic = sensob
 		self.value = 0
 
 	def update(self):

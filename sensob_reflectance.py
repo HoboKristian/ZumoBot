@@ -1,4 +1,4 @@
-from basic_robot import reflectance_sensors
+import reflectance_sensors
 
 class SensobReflectance(object):
 	def __init__(self):
@@ -10,8 +10,8 @@ class SensobReflectance(object):
 
 	def update(self):
 		raw_value = self.sensors.get_value()
-		n = len(raw_value)
 		min_value = raw_value[0]
+		darkest_sensor = [0, 1]
 		for i, value in enumerate(raw_value):
 			if value < min_value:
 				min_value = value
