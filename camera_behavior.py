@@ -9,6 +9,9 @@ class CameraBehavior(object):
 		else:
 			self.value = 0
 
+	def get_value(self):
+		return self.value
+
 	def get_wheel_value(self):
 		return None
 
